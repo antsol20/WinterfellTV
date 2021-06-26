@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">WinterfellTv</string>
+    <string name="tab_text_1">Sky </string>
+    <string name="tab_text_2">Denon AMP</string>
+    <string name="tab_text_3">Matrix</string>
+    <string name="tab_text_4">LG TV</string>
+</resources>

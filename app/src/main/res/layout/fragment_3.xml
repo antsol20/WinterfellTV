@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Frag1">
+
+
+
+    <TextView
+        android:id="@+id/roomTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Select Room"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    
+    <RadioGroup
+        android:id="@+id/RG"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/roomTV">
+
+
+        <RadioButton
+            android:id="@+id/room1B"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tag="1"
+            android:text="Lounge"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/room2B"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bedroom 1"
+            android:tag="2"
+            android:textSize="18sp"
+            />
+
+        <RadioButton
+            android:id="@+id/room3B"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bedroom 2"
+            android:tag="3"
+            android:textSize="18sp"
+            />
+
+
+        <RadioButton
+            android:id="@+id/room4B"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bedroom 3"
+            android:tag="4"
+            android:textSize="18sp"
+            />
+
+        <RadioButton
+            android:id="@+id/room5B"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bedroom 4"
+            android:tag="5"
+            android:textSize="18sp"
+            />
+
+        <RadioButton
+            android:id="@+id/room6B"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bedroom 5"
+            android:tag="6"
+            android:textSize="18sp"
+            />
+
+
+        <RadioButton
+            android:id="@+id/room7B"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kitchen"
+            android:tag="7"
+            android:textSize="18sp"
+            />
+
+        <RadioButton
+            android:id="@+id/room8B"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cinema"
+            android:tag="8"
+            android:textSize="18sp"
+            />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/inputTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Select Input"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/RG" />
+
+
+    <Button
+        android:id="@+id/input1B"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="20dp"
+        android:tag="input1"
+        android:text="HTPC"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf= "parent"
+        app:layout_constraintStart_toEndOf= "@id/input2B"
+        app:layout_constraintTop_toBottomOf="@id/inputTV" />
+
+    <Button
+        android:id="@+id/input2B"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:tag="input2"
+        android:text="Sky 1"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@id/input1B"
+        app:layout_constraintEnd_toStartOf="@id/input3B"
+        app:layout_constraintTop_toTopOf="@id/input1B" />
+
+    <Button
+        android:id="@+id/input3B"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:tag="input3"
+        android:text="Sky 2"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@id/input4B"
+        app:layout_constraintStart_toEndOf="@id/input2B"
+        app:layout_constraintTop_toTopOf="@id/input1B" />
+
+    <Button
+        android:id="@+id/input4B"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:tag="input4"
+        android:text="Bluray"
+        android:textSize="18sp"
+        android:layout_width="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/input3B"
+        app:layout_constraintTop_toTopOf="@id/input1B" />
+
+
+    <Button
+        android:id="@+id/input5B"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="20dp"
+        android:tag="input5"
+        android:text="-"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf= "parent"
+        app:layout_constraintStart_toEndOf= "@id/input6B"
+        app:layout_constraintTop_toBottomOf="@id/input1B" />
+
+    <Button
+        android:id="@+id/input6B"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_marginTop="20dp"
+        android:tag="input6"
+        android:text="-"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf= "@id/input2B"
+        app:layout_constraintEnd_toEndOf= "@id/input2B"
+        app:layout_constraintTop_toBottomOf="@id/input1B" />
+
+    <Button
+        android:id="@+id/input7B"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_marginTop="20dp"
+        android:tag="input7"
+        android:text="CCTV"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@id/input3B"
+        app:layout_constraintEnd_toEndOf= "@id/input3B"
+        app:layout_constraintTop_toBottomOf="@id/input1B" />
+
+    <Button
+        android:id="@+id/input8B"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_marginTop="20dp"
+        android:tag="input8"
+        android:text="-"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@id/input4B"
+        app:layout_constraintEnd_toEndOf= "@id/input4B"
+        app:layout_constraintTop_toBottomOf="@id/input1B" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
